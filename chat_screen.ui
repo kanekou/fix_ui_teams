@@ -83,7 +83,7 @@
         </size>
        </property>
        <property name="styleSheet">
-        <string notr="true">image: url(:/test/bell.svg);
+        <string notr="true">image: url(:/test/images/bell.svg);
 color : rgb(255, 255, 255);
 font: 13pt &quot;.AppleSystemUIFont&quot;;</string>
        </property>
