@@ -1,4 +1,4 @@
-# Qt Designer generated from pyside2
+# Qt file generated from pyside2
 ## pythonへの変換方法
 1. uiファイルを保存
 2. `$ pyside2-uic -o 出力したい.py ファイル作成した.uiファイル`
