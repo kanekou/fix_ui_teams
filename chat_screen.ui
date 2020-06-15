@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>850</width>
-    <height>648</height>
+    <width>720</width>
+    <height>785</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -220,7 +220,7 @@ color : rgb(255, 255, 255)</string>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>search.png</normaloff>search.png</iconset>
+      <normaloff>images/search.png</normaloff>images/search.png</iconset>
     </property>
    </widget>
    <zorder>verticalWidget</zorder>
