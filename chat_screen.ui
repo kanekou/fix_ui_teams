@@ -206,15 +206,50 @@ color : rgb(255, 255, 255)</string>
      </property>
     </widget>
    </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>90</y>
+      <width>51</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>search.png</normaloff>search.png</iconset>
+    </property>
+   </widget>
    <zorder>verticalWidget</zorder>
    <zorder>horizontalWidget</zorder>
    <zorder>listWidget</zorder>
    <zorder>scrollArea</zorder>
+   <zorder>pushButton</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
   <include location="ui.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton</receiver>
+   <slot>showMenu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>252</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>252</x>
+     <y>102</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
