@@ -23,7 +23,7 @@ class Ui_MainWindow(object):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.setEnabled(True)
-        MainWindow.resize(720, 785)
+        MainWindow.resize(960, 1035)
         sizePolicy = QSizePolicy(QSizePolicy.Maximum, QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -119,6 +119,7 @@ class Ui_MainWindow(object):
         self.scrollArea = QScrollArea(self.centralwidget)
         self.scrollArea.setObjectName(u"scrollArea")
         self.scrollArea.setGeometry(QRect(269, 90, 581, 531))
+        self.scrollArea.setAutoFillBackground(False)
         self.scrollArea.setStyleSheet(u"background-color: rgb(240, 239, 238);")
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
@@ -127,6 +128,21 @@ class Ui_MainWindow(object):
         self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 579, 529))
         self.scrollAreaWidgetContents.setStyleSheet(
             u"background-color: rgb(240, 239, 238);")
+        self.textEdit = QTextEdit(self.scrollAreaWidgetContents)
+        self.textEdit.setObjectName(u"textEdit")
+        self.textEdit.setGeometry(QRect(30, 330, 131, 31))
+        self.textEdit.setVisible(False)
+
+        self.textEdit_2 = QTextEdit(self.scrollAreaWidgetContents)
+        self.textEdit_2.setObjectName(u"textEdit_2")
+        self.textEdit_2.setGeometry(QRect(170, 330, 131, 31))
+        self.textEdit_2.setVisible(False)
+
+        self.pushButton_11 = QPushButton(self.scrollAreaWidgetContents)
+        self.pushButton_11.setObjectName(u"pushButton_11")
+        self.pushButton_11.setGeometry(QRect(310, 330, 113, 32))
+        self.pushButton_11.setVisible(False)
+
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.pushButton = QPushButton(self.centralwidget)
         self.pushButton.setObjectName(u"pushButton")
@@ -135,7 +151,7 @@ class Ui_MainWindow(object):
         icon.addFile(u"images/search.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton.setIcon(icon)
 
-        # ここから触ってみる
+        # オリジナル
         self.pushButton.setCheckable(True)
         # シグナル・スロットの設定
         self.pushButton.toggled.connect(self.slot_button_toggled)
@@ -143,6 +159,9 @@ class Ui_MainWindow(object):
         self.lineEdit = QLineEdit(self.centralwidget)
         self.lineEdit.setObjectName(u"lineEdit")
         self.lineEdit.setGeometry(QRect(100, 95, 113, 21))
+        self.pushButton_2 = QPushButton(self.centralwidget)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_2.setGeometry(QRect(160, 130, 113, 32))
         MainWindow.setCentralWidget(self.centralwidget)
         self.verticalWidget.raise_()
         self.horizontalWidget.raise_()
@@ -150,22 +169,38 @@ class Ui_MainWindow(object):
         self.scrollArea.raise_()
         self.pushButton.raise_()
         self.lineEdit.raise_()
+        self.pushButton_2.raise_()
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
         self.pushButton.clicked.connect(self.pushButton.showMenu)
+        # self.pushButton_2.clicked.connect(self.pushButton_2.click)
+        self.pushButton_2.clicked.connect(self.slot_button_clicked_to_view)
+        self.pushButton_11.clicked.connect(self.slot_button_clicked_to_remove)
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
 
     def slot_button_toggled(self, checked):
-        """ ボタンがトグルされたときのスロット """
         if checked:
             self.lineEdit.setVisible(True)
         else:
             self.lineEdit.setVisible(False)
+
+    def slot_button_clicked_to_view(self, clicked):
+        if clicked:
+            self.textEdit.setVisible(True)
+            self.textEdit_2.setVisible(True)
+            self.pushButton_11.setVisible(True)
+            print("clicked to visible!")
+
+    def slot_button_clicked_to_remove(self, clicked):
+        self.textEdit.setVisible(False)
+        self.textEdit_2.setVisible(False)
+        self.pushButton_11.setVisible(False)
+        print("clicked to not visible!")
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate(
@@ -194,9 +229,24 @@ class Ui_MainWindow(object):
             "MainWindow", u"\u30d5\u30a1\u30a4\u30eb", None))
         self.pushButton_10.setText(QCoreApplication.translate(
             "MainWindow", u"\uff65\uff65\uff65", None))
+        self.textEdit.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                                         "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                                         "p, li { white-space: pre-wrap; }\n"
+                                                         "</style></head><body style=\" font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+                                                         "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">invate user</p></body></html>", None))
+        self.textEdit_2.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                                           "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                                           "p, li { white-space: pre-wrap; }\n"
+                                                           "</style></head><body style=\" font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+                                                           "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">group name</p></body></html>", None))
+        self.pushButton_11.setText(
+            QCoreApplication.translate("MainWindow", u"OK", None))
         self.pushButton.setText("")
-        # self.lineEdit.setText(QCoreApplication.translate(
-        #     "MainWindow", u"\u691c\u7d22\u6b04", None))
         self.lineEdit.setText(QCoreApplication.translate(
-            "MainWindow", "Hello", None))
+            "MainWindow", u"\u691c\u7d22\u6b04", None))
+        self.pushButton_2.setText(
+            QCoreApplication.translate("MainWindow", u"NewChat", None))
+        self.pushButton_2.setCheckable(True)
+        # シグナル・スロットの設定
+
     # retranslateUi
