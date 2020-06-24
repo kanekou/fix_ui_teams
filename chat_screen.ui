@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>782</width>
-    <height>545</height>
+    <width>854</width>
+    <height>550</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -201,36 +201,6 @@ color : rgb(255, 255, 255)</string>
      </item>
     </layout>
    </widget>
-   <widget class="QScrollArea" name="scrollArea">
-    <property name="geometry">
-     <rect>
-      <x>269</x>
-      <y>100</y>
-      <width>581</width>
-      <height>521</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(240, 239, 238);
-color: rgb(240, 239, 238);</string>
-    </property>
-    <property name="widgetResizable">
-     <bool>true</bool>
-    </property>
-    <widget class="QWidget" name="scrollAreaWidgetContents">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>579</width>
-       <height>519</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(240, 239, 238);</string>
-     </property>
-    </widget>
-   </widget>
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">
      <rect>
@@ -391,6 +361,48 @@ border-top-color: rgb(40, 35, 82);</string>
        <string>&gt;</string>
       </property>
      </widget>
+    </widget>
+    <widget class="QRadioButton" name="radioButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_3">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>20</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
     </widget>
    </widget>
    <widget class="QWidget" name="widget_3" native="true">
@@ -605,12 +617,19 @@ border-top-color: rgb(40, 35, 82);</string>
      </property>
     </widget>
    </widget>
-   <zorder>listWidget</zorder>
-   <zorder>verticalWidget</zorder>
-   <zorder>widget</zorder>
-   <zorder>widget_3</zorder>
-   <zorder>widget_2</zorder>
-   <zorder>scrollArea</zorder>
+   <widget class="QWidget" name="widget_5" native="true">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>100</y>
+      <width>581</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(240, 239, 238);</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
@@ -624,7 +643,6 @@ border-top-color: rgb(40, 35, 82);</string>
   <tabstop>sidebutton6</tabstop>
   <tabstop>sidebutton7</tabstop>
   <tabstop>sidebutton8</tabstop>
-  <tabstop>scrollArea</tabstop>
  </tabstops>
  <resources>
   <include location="ui.qrc"/>
