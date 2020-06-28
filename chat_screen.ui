@@ -806,7 +806,7 @@ font: 13pt &quot;.AppleSystemUIFont&quot;;</string>
        <normaloff>images/search.png</normaloff>images/search.png</iconset>
      </property>
     </widget>
-    <widget class="QToolButton" name="toolButton_11">
+    <widget class="QPushButton" name="pushButton_11">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -889,8 +889,8 @@ border: solid;</string>
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#343434;&quot;&gt;兼島 光平&lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:14px; color:#343434;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#8f8f8f;&quot;&gt;17:21&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:14px;&quot;&gt;ああ～いいっすね～&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:12pt; color:#343434;&quot;&gt;兼島 光平&lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:14px; color:#343434;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:12pt; color:#8f8f8f;&quot;&gt;17:21&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:14px;&quot;&gt;ああ～いいっすね～&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QTextEdit" name="textEdit_6">
@@ -914,8 +914,8 @@ border: solid;</string>
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#7a7a7a;&quot;&gt;16:49&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:14px;&quot;&gt;あ、pushできたで&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:12pt; color:#7a7a7a;&quot;&gt;16:49&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:14px;&quot;&gt;あ、pushできたで&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QTextEdit" name="textEdit_7">
@@ -939,7 +939,7 @@ border: solid;</string>
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#343434;&quot;&gt;兼島 光平 &lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#7c7c7c;&quot;&gt;昨日&lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#8f8f8f;&quot;&gt;17:44&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:12pt; color:#343434;&quot;&gt;兼島 光平 &lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:12pt; color:#7c7c7c;&quot;&gt;昨日&lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:12pt; color:#8f8f8f;&quot;&gt;17:44&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;なんで怒られとん&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
@@ -964,7 +964,7 @@ border: solid;</string>
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#7a7a7a;&quot;&gt;昨日17:31&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:12pt; color:#7a7a7a;&quot;&gt;昨日17:31&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;なんかGIthubにpushできねぇ。。。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
