@@ -27,9 +27,14 @@ class MainWindow2(QMainWindow):
     # Ui_MainWindow2().toolButton_11.clicked.connect(changeView)
 
 
-def changeView():  # chat_screen   -> chat_screen_new_chat に遷移させる
+def changeViewToNewChat():  # chat_screen   -> chat_screen_new_chat に遷移させる
     window.hide()  # chat_screen を hide
     window2.show()  # chat_screen_new_chat を show
+
+
+def changeViewToChatScreen():  # chat_screen   -> chat_screen_new_chat に遷移させる
+    window2.hide()  # chat_screen を hide
+    window.show()  # chat_screen_new_chat を show
 
 
 # 実行処理
@@ -41,5 +46,7 @@ if __name__ == "__main__":
     window2 = MainWindow2()  # chat_screen_new_chat
     # MainWindowの表示
     window.show()
+    window.ui.toolButton_11.clicked.connect(changeViewToNewChat)
+    window2.ui2.toolButton_14.clicked.connect(changeViewToChatScreen)
 
     sys.exit(app.exec_())
