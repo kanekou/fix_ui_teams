@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="test">
+    <file>images/attend_plus.svg</file>
+    <file>images/popup.svg</file>
     <file>images/icon.png</file>
     <file>images/ファイル.png</file>
     <file>images/その他.png</file>
