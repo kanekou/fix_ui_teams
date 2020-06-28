@@ -28,8 +28,8 @@ class MainWindow2(QMainWindow):
 
 
 def changeView():  # chat_screen   -> chat_screen_new_chat に遷移させる
-    window.hide()  # dlg1 を hide
-    window2.show()  # dlg2 を show
+    window.hide()  # chat_screen を hide
+    window2.show()  # chat_screen_new_chat を show
 
 
 # 実行処理
