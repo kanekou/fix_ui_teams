@@ -265,14 +265,14 @@ class Ui_MainWindow(object):
         self.lineEdit = QLineEdit(self.widget_2)
         self.lineEdit.setObjectName(u"lineEdit")
         self.lineEdit.setGeometry(QRect(10, 60, 113, 21))
-        self.pushButton = QPushButton(self.widget_2)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(130, 60, 51, 32))
-        self.pushButton.setCursor(QCursor(Qt.PointingHandCursor))
-        self.pushButton.setStyleSheet(u"")
+        self.toolButton_search = QToolButton(self.widget_2)
+        self.toolButton_search.setObjectName(u"toolButton_search")
+        self.toolButton_search.setGeometry(QRect(130, 60, 51, 32))
+        self.toolButton_search.setCursor(QCursor(Qt.PointingHandCursor))
+        self.toolButton_search.setStyleSheet(u"")
         icon = QIcon()
         icon.addFile(u"images/search.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.pushButton.setIcon(icon)
+        self.toolButton_search.setIcon(icon)
         self.toolButton_11 = QToolButton(self.widget_2)
         self.toolButton_11.setObjectName(u"toolButton_11")
         self.toolButton_11.setGeometry(QRect(10, 100, 91, 31))
@@ -337,7 +337,6 @@ class Ui_MainWindow(object):
         QWidget.setTabOrder(self.sidebutton5, self.sidebutton6)
 
         self.retranslateUi(MainWindow)
-        self.pushButton.clicked.connect(self.pushButton.showMenu)
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
@@ -441,33 +440,33 @@ class Ui_MainWindow(object):
 #endif // QT_CONFIG(tooltip)
         self.lineEdit_14.setText(QCoreApplication.translate("MainWindow", u"\u9023\u7d61\u5148", None))
         self.lineEdit.setText(QCoreApplication.translate("MainWindow", u"\u691c\u7d22\u6b04", None))
-        self.pushButton.setText("")
+        self.toolButton_search.setText("")
         self.toolButton_11.setText(QCoreApplication.translate("MainWindow", u"+ \u65b0\u898f\u4f5c\u6210", None))
         self.textEdit_5.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#343434;\">\u517c\u5cf6 \u5149\u5e73</span><span style=\" font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:14px; color:#343434;\"> </span><span style=\" font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#8f8f8f;\">17:21</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block"
-                        "-indent:0; text-indent:0px;\"><span style=\" font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:14px;\">\u3042\u3042\uff5e\u3044\u3044\u3063\u3059\u306d\uff5e</span></p></body></html>", None))
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:12pt; color:#343434;\">\u517c\u5cf6 \u5149\u5e73</span><span style=\" font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:14px; color:#343434;\"> </span><span style=\" font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:12pt; color:#8f8f8f;\">17:21</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0"
+                        "px;\"><span style=\" font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:14px;\">\u3042\u3042\uff5e\u3044\u3044\u3063\u3059\u306d\uff5e</span></p></body></html>", None))
         self.textEdit_6.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#7a7a7a;\">16:49</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:14px;\">\u3042\u3001push\u3067\u304d\u305f\u3067</span></p></body></html>", None))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:12pt; color:#7a7a7a;\">16:49</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:14px;\">\u3042\u3001push\u3067\u304d\u305f\u3067</span></p></body></html>", None))
         self.textEdit_7.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#343434;\">\u517c\u5cf6 \u5149\u5e73 </span><span style=\" font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#7c7c7c;\">\u6628\u65e5</span><span style=\" font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#8f8f8f;\">17:44</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0p"
-                        "x; -qt-block-indent:0; text-indent:0px;\">\u306a\u3093\u3067\u6012\u3089\u308c\u3068\u3093</p></body></html>", None))
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:12pt; color:#343434;\">\u517c\u5cf6 \u5149\u5e73 </span><span style=\" font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:12pt; color:#7c7c7c;\">\u6628\u65e5</span><span style=\" font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:12pt; color:#8f8f8f;\">17:44</span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; t"
+                        "ext-indent:0px;\">\u306a\u3093\u3067\u6012\u3089\u308c\u3068\u3093</p></body></html>", None))
         self.textEdit_8.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#7a7a7a;\">\u6628\u65e517:31</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Segoe UI,system-ui,Apple Color Emoji,Segoe UI Emoji,sans-serif'; font-size:12pt; color:#7a7a7a;\">\u6628\u65e517:31</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u306a\u3093\u304bGIthub\u306bpush\u3067\u304d\u306d\u3047\u3002\u3002\u3002</p></body></html>", None))
         self.lineEdit_9.setText(QCoreApplication.translate("MainWindow", u"\u4eca\u65e5", None))
         self.textEdit_9.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"

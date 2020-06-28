@@ -783,7 +783,7 @@ font: 13pt &quot;.AppleSystemUIFont&quot;;</string>
       <string>検索欄</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QToolButton" name="toolButton_search">
      <property name="geometry">
       <rect>
        <x>130</x>
@@ -806,7 +806,7 @@ font: 13pt &quot;.AppleSystemUIFont&quot;;</string>
        <normaloff>images/search.png</normaloff>images/search.png</iconset>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_11">
+    <widget class="QToolButton" name="toolButton_11">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -1034,22 +1034,5 @@ p, li { white-space: pre-wrap; }
  <resources>
   <include location="ui.qrc"/>
  </resources>
- <connections>
-  <connection>
-   <sender>pushButton</sender>
-   <signal>clicked()</signal>
-   <receiver>pushButton</receiver>
-   <slot>showMenu()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>252</x>
-     <y>102</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>252</x>
-     <y>102</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

@@ -28,6 +28,7 @@ class MainWindow2(QMainWindow):
 
 
 def changeViewToNewChat():  # chat_screen   -> chat_screen_new_chat に遷移させる
+    print("pushed")
     window.hide()  # chat_screen を hide
     window2.show()  # chat_screen_new_chat を show
 
