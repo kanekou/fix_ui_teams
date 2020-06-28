@@ -48,5 +48,7 @@ if __name__ == "__main__":
     window.show()
     window.ui.toolButton_11.clicked.connect(changeViewToNewChat)
     window2.ui2.toolButton_14.clicked.connect(changeViewToChatScreen)
+    # window2.ui2.pushButton_2.clicked.connect(changeViewToChatScreen)
+    window2.ui2.toolButton_15.clicked.connect(changeViewToChatScreen)
 
     sys.exit(app.exec_())
