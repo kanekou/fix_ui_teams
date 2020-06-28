@@ -1,5 +1,14 @@
 <RCC>
   <qresource prefix="test">
+    <file>ふきだし.png</file>
+    <file>チャット.png</file>
+    <file>images/tesu.svg</file>
+    <file>images/tesu.png</file>
+    <file>描画.png</file>
+    <file>イラスト.jpg</file>
+    <file>イラスト2.jpg</file>
+    <file>images/白抜き.svg</file>
     <file>images/bell.svg</file>
+    <file>images/青アリ.svg</file>
   </qresource>
 </RCC>
