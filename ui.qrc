@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="test">
+    <file>images/download.svg</file>
+    <file>images/call.svg</file>
     <file>images/bell.svg</file>
     <file>images/camera.svg</file>
   </qresource>

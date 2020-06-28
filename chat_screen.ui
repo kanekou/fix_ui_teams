@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>854</width>
-    <height>550</height>
+    <width>851</width>
+    <height>598</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -102,8 +102,7 @@
         </size>
        </property>
        <property name="styleSheet">
-        <string notr="true">image: url(:/test/images/bell.svg);
-alternate-background-color: rgb(52, 52, 88);
+        <string notr="true">alternate-background-color: rgb(52, 52, 88);
 color : rgb(255, 255, 255);
 font: 13pt &quot;.AppleSystemUIFont&quot;;</string>
        </property>
@@ -223,7 +222,7 @@ color : rgb(255, 255, 255)</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(122, 121, 149);</string>
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
      <property name="html">
       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -236,10 +235,10 @@ p, li { white-space: pre-wrap; }
     <widget class="QLineEdit" name="lineEdit_10">
      <property name="geometry">
       <rect>
-       <x>180</x>
+       <x>200</x>
        <y>10</y>
-       <width>41</width>
-       <height>41</height>
+       <width>16</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -256,14 +255,20 @@ gridline-color: rgba(255, 255, 255, 0);</string>
      <property name="text">
       <string>&lt;</string>
      </property>
+     <property name="frame">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_11">
      <property name="geometry">
       <rect>
-       <x>220</x>
+       <x>230</x>
        <y>10</y>
-       <width>41</width>
-       <height>41</height>
+       <width>21</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -273,12 +278,16 @@ gridline-color: rgba(255, 255, 255, 0);</string>
      <property name="styleSheet">
       <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;
 color: rgb(255, 255, 255);
-background-color: rgba(255, 255, 255, 0);
-gridline-color: rgba(255, 255, 255, 0);
-border-top-color: rgb(40, 35, 82);</string>
+color: rgb(94, 94, 129);</string>
      </property>
      <property name="text">
       <string>&gt;</string>
+     </property>
+     <property name="frame">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QWidget" name="widget_4" native="true">
@@ -430,8 +439,17 @@ border-top-color: rgb(40, 35, 82);</string>
       <string>def change_value(self):
         self.text = &quot;yattaze&quot;</string>
      </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+     </property>
      <property name="text">
       <string>だんご3兄弟</string>
+     </property>
+     <property name="frame">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_4">
@@ -450,6 +468,12 @@ border-top-color: rgb(40, 35, 82);</string>
      <property name="text">
       <string>チャット</string>
      </property>
+     <property name="frame">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_7">
      <property name="geometry">
@@ -466,6 +490,12 @@ border-top-color: rgb(40, 35, 82);</string>
      </property>
      <property name="text">
       <string>ファイル</string>
+     </property>
+     <property name="frame">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_8">
@@ -484,22 +514,62 @@ border-top-color: rgb(40, 35, 82);</string>
      <property name="text">
       <string>+</string>
      </property>
+     <property name="frame">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_9">
+    <widget class="QToolButton" name="toolButton_2">
      <property name="geometry">
       <rect>
-       <x>430</x>
+       <x>400</x>
        <y>10</y>
-       <width>51</width>
+       <width>31</width>
        <height>31</height>
       </rect>
      </property>
-     <property name="toolTip">
-      <string>def change_value(self):
-        self.text = &quot;yattaze&quot;</string>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/test/images/camera.svg);
+background-color: rgb(79, 78, 150);</string>
      </property>
      <property name="text">
-      <string>通話</string>
+      <string/>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_3">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>10</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/test/images/call.svg);
+background-color: rgb(79, 78, 150);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_4">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>10</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/test/images/download.svg);
+background-color: rgb(79, 78, 150);</string>
+     </property>
+     <property name="text">
+      <string/>
      </property>
     </widget>
    </widget>
@@ -546,10 +616,20 @@ border-top-color: rgb(40, 35, 82);</string>
         self.text = &quot;yattaze&quot;</string>
      </property>
      <property name="styleSheet">
-      <string notr="true">font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+      <string notr="true">border: solid;
+font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+     </property>
+     <property name="inputMask">
+      <string notr="true"/>
      </property>
      <property name="text">
       <string>チャット</string>
+     </property>
+     <property name="frame">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_6">
@@ -568,6 +648,12 @@ border-top-color: rgb(40, 35, 82);</string>
      <property name="text">
       <string>最近</string>
      </property>
+     <property name="frame">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_14">
      <property name="geometry">
@@ -584,6 +670,12 @@ border-top-color: rgb(40, 35, 82);</string>
      </property>
      <property name="text">
       <string>連絡先</string>
+     </property>
+     <property name="frame">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit">
@@ -608,6 +700,9 @@ border-top-color: rgb(40, 35, 82);</string>
        <height>32</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <property name="text">
       <string/>
      </property>
@@ -617,18 +712,189 @@ border-top-color: rgb(40, 35, 82);</string>
      </property>
     </widget>
    </widget>
-   <widget class="QWidget" name="widget_5" native="true">
+   <widget class="QScrollArea" name="scrollArea">
     <property name="geometry">
      <rect>
       <x>270</x>
       <y>100</y>
       <width>581</width>
-      <height>421</height>
+      <height>471</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(240, 239, 238);</string>
+    <property name="minimumSize">
+     <size>
+      <width>581</width>
+      <height>471</height>
+     </size>
     </property>
+    <property name="styleSheet">
+     <string notr="true">border: solid;</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>581</width>
+       <height>471</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="widget_5" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>581</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(240, 239, 238);</string>
+      </property>
+      <widget class="QTextEdit" name="textEdit_5">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>270</y>
+         <width>211</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+border: solid;</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#343434;&quot;&gt;兼島 光平&lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:14px; color:#343434;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#8f8f8f;&quot;&gt;17:21&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:14px;&quot;&gt;ああ～いいっすね～&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_6">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>200</y>
+         <width>221</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(223, 222, 238);
+border: solid;</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#7a7a7a;&quot;&gt;16:49&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:14px;&quot;&gt;あ、pushできたで&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_7">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>90</y>
+         <width>211</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+border: solid;</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#343434;&quot;&gt;兼島 光平 &lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#7c7c7c;&quot;&gt;昨日&lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#8f8f8f;&quot;&gt;17:44&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;なんで怒られとん&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_8">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>10</y>
+         <width>221</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(223, 222, 238);
+border: solid;</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','system-ui','Apple Color Emoji','Segoe UI Emoji','sans-serif'; font-size:12pt; color:#7a7a7a;&quot;&gt;昨日17:31&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;なんかGIthubにpushできねぇ。。。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_9">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>170</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>今日</string>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_9">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>370</y>
+         <width>371</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#373534;&quot;&gt;新しいメッセージの入力&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
