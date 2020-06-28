@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="test">
+    <file>images/icon.png</file>
+    <file>images/ファイル.png</file>
     <file>images/その他.png</file>
     <file>images/チーム.png</file>
     <file>images/最新情報.png</file>
